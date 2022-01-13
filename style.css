@@ -61,6 +61,7 @@ li {
 .nav-close {
 	cursor: pointer;
 	text-transform: uppercase;
+	margin-bottom: 2rem;
 }
 
 .nav-toggle {
@@ -89,14 +90,18 @@ li {
 
 .sidebar {
 	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	background-color: lightcoral;
+	height: 100%;
 	width: 100%;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	transform: translateX(100%);
-	transition: transform 1000ms;
+	transition: transform ease 1000ms;
 }
 
 .sidebar-open {
